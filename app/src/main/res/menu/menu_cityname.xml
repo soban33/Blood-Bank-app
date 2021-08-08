@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/city_amravati" android:title="Amravati"/>
+    <item android:id="@+id/city_akola" android:title="Akola"/>
+    <item android:id="@+id/city_nagpur" android:title="Nagpur"/>
+    <item android:id="@+id/city_washim" android:title="Washim"/>
+</menu>

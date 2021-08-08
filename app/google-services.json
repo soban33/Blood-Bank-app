@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "624434854379",
+    "project_id": "blood-new-53fd8",
+    "storage_bucket": "blood-new-53fd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624434854379:android:7fd4f4760c242c604041ae",
+        "android_client_info": {
+          "package_name": "com.soban.bepositivet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624434854379-6g8q443013tuni4g1tbiabeqs75j97nv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-eI8gSHEiPkJrUt1Le383-NBiirK44-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624434854379-6g8q443013tuni4g1tbiabeqs75j97nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

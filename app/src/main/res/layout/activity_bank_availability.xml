@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankAvailability">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_bloodavail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Selcted blood group\n is available"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+                android:lineSpacingExtra="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_right_tickmark"
+                android:layout_gravity="center"
+                android:layout_margin="35dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total units available"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt_tottalunitsavail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 units"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:fontFamily="@font/nunito_extrabold"
+                />
+
+            <Button
+                android:id="@+id/btn_proceedtoorder"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="proceed to order"
+                android:background="@drawable/roundbackground_red_allcorners"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_placeorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fill following details"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                android:lineSpacingExtra="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                />
+            <EditText
+                android:id="@+id/edttxt_entername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter your name..."
+                android:fontFamily="@font/nunito_semibold"
+                android:background="@drawable/roundbackg_redborder"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:textColorHint="@color/red"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/roundbackg_redborder"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                >
+                <TextView
+                    android:id="@+id/txt_unitsselected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="units..."
+                    android:fontFamily="@font/nunito_semibold"
+                    android:textSize="18sp"
+                    android:textColor="@color/red"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_btn_dropdownmenu_forunits"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@mipmap/ic_dropdown"
+                    android:layout_marginStart="150dp"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edttxt_enteraddress"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="enter your address..."
+                android:fontFamily="@font/nunito_semibold"
+                android:background="@drawable/roundbackg_redborder"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:padding="15dp"
+                android:textColorHint="@color/red"
+                android:gravity="bottom"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*pay on delivery"
+                android:textSize="14sp"
+                android:fontFamily="@font/nunito_semibold"
+                android:lineSpacingExtra="5dp"
+                android:textStyle="bold"
+                android:layout_marginStart="35dp"
+                />
+
+            <Button
+                android:id="@+id/btn_placeorder"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="place order"
+                android:background="@drawable/roundbackground_red_allcorners"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bloodnotavail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blood not available with\nselected credentials"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:gravity="center_horizontal"
+                android:textSize="25sp"
+                android:lineSpacingExtra="5dp"
+                android:textStyle="bold"
+                android:layout_marginTop="35dp"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_wrong_tickmark"
+                android:layout_gravity="center"
+                android:layout_margin="35dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sorry for inconvenience"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

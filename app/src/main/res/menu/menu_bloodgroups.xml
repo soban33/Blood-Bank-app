@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/grp_ap" android:title="A+"/>
+    <item android:id="@+id/grp_an" android:title="A-"/>
+    <item android:id="@+id/grp_bp" android:title="B+"/>
+    <item android:id="@+id/grp_bn" android:title="B-"/>
+    <item android:id="@+id/grp_abp" android:title="AB+"/>
+    <item android:id="@+id/grp_abn" android:title="AB-"/>
+    <item android:id="@+id/grp_op" android:title="O+"/>
+    <item android:id="@+id/grp_on" android:title="O-"/>
+</menu>
